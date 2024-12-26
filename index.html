@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./project02.css">
+</head>
+<body>
+    <div class="cal">
+        <h1>BMI Meter</h1>
+        <div class="gen">
+            <div class="male">
+                <div id="m"></div>
+                <label for="m">Male</label>
+            </div>
+            <div class="female">
+                <div id="f"></div>
+                <label for="f">Female</label>
+            </div>
+        </div>
+        <div class="height">
+            <label for="myhei">Height*(cm)</label>
+            <input id="myhei" type="number" placeholder="Eg. 150">
+        </div>
+        <div class="weight">
+            <label for="mywei">Weight*(KG)</label>
+            <input id="mywei" type="number" placeholder="Eg. 65">
+        </div>
+        <div class="result"></div>
+        <button>Submit</button>
+    </div>
+    <div class="info">
+        <p>BMI Categories:</p>
+        <ul>
+            <li>Underweight: BMI < 18.5</li>
+            <li>Normal weight: BMI 18.5–24.9</li>
+            <li>Overweight: BMI 25–29.9</li>
+            <li>Obesity: BMI ≥ 30</li>
+        </ul>
+    </div>
+    <script src="./project02.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, hsla(12, 100%, 69%, 0.404), #feb47b32);
+    /* background: linear-gradient(to right, #ff512f, #dd2476); */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.cal{
+    background-color: white;
+    width: 33vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: inset -10px -5px 0px hsla(12, 100%, 69%, 0.855) ;
+    /* background-color: crimson; */
+}
+
+.gen{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.male,.female{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+#m,#f{
+    width: 100px;
+    height: 100px;
+}
+#m{
+     background-image: url("./male.png");
+     background-size: cover;
+     border-radius: 50%;
+}
+#f{
+     background-image: url("./female.png");
+     background-size: cover;
+     border-radius: 50%;
+}
+.height,.weight{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#myhei,#mywei{
+    width: 60%;
+    height: 30px;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+.result{
+    text-decoration-line: line-through;
+    text-decoration-thickness:15px ;
+    text-decoration-color: #da640a37;
+}
+.cal button{
+    height: 30px;
+    width: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color: #feb47b;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cal button:hover{
+    transform: scale(1.1);
+    background-color: #da640a;
+}
+
+.info{
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.info p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+.info li{
+    font-weight: bold;
+    text-decoration-line: line-through;
+    text-decoration-thickness:15px ;
+    text-decoration-color: #da640a37;
+}
+
+@media (max-width: 960px) {
+    .cal{
+        width: 70vw;
+    }
+    .info{
+        width: 50vw;
+    }
+}
+@media (max-width: 430px) {
+    .cal{
+        width: 90vw;
+    }
+    .info{
+        width: 80vw;
+    }
+}
